@@ -48,3 +48,11 @@ const user = loginUser('alok60541@gmail.com', 123456, user =>{
 });
 
 console.log("finish");
+
+
+// function loginUser(email,password){
+//     setTimeout(() => {
+//         console.log("now we have the data");
+//         return {userEmail: email};
+//     }, 3000);
+// }
