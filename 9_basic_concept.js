@@ -117,3 +117,76 @@ let mydate= new Date();
 // console.log(mydate.getMinutes()); //it show only minutes
 // console.log(mydate.getHours()); // it show only hour
 // console.log(mydate);
+
+// DOM Manipulation
+let elem=document.getElementById('click');
+//  console.log(elem);
+
+ let elemclass= document.getElementsByClassName('container'); // short form of getelemebtbyidname => gebcn
+//  console.log(elemclass)
+//  elemclass[0].style.background= "yellow";
+ elemclass[0].classList.add("bg-primary") // to add color in the containter
+ elemclass[0].classList.add("text-success")
+ elemclass[0].classList.remove("text-success") // it is use to remove the text-success class / it is use in the console
+elemclass[0].innerHTML  // it is use to show all containt of html of this container
+elemclass[0].innertext  // it is use to show all  text of a containter
+
+// console.log(elem.innerHTML); // it is also use to show inner html
+// console.log(elem.innertext); // it is also use to show inner text
+
+tn=document.getElementsByTagName('div') // it is use to show the tag name of html
+console.log(tn)
+
+rajaram = document.createElement('p'); // it is use to add a paragraph.
+rajaram.innertext= "this is a created elelment pera";
+tn[0].appendChild(rajaram); // it is use to add a element.
+
+rajaram2 = document.createElement('b');
+rajaram2.innertext ="This is a created bold";
+tn[0].replaceChild(rajaram2,rajaram); // this is use to replace the document.
+
+// removechild(element); -----> removes an element
+
+document.location // to show the location of document.
+document.title  //to show the title of document.
+document.url  // to show the url of document.
+document.scripts // to show all script.
+document.link  // show the link
+document.images
+document.domain // to show domain
+
+// Selecting using query
+sel = document.querySelector('.container') // to show one container
+console.log(sel)
+sel = document.querySelectorAll('.container') // to show all container
+console.log(sel)
+
+function clicked(){
+    console.log('the button was clicked')
+}
+
+window.onload =function(){
+    console.log('The document was loaded') // it is use to add or load document 
+}
+// Event in javascript
+let prevHtml= document.querySelectorAll('.container')[1].innerHTML;
+
+firstcotainer.addEventListener('click',function(){  // it is use to set the function of click
+    document.querySelectorAll('.container')[1].innerHTML="<b> we have clicked</b>" // it show when we click on container.
+console.log("click hua")
+})
+firstcotainer.addEventListener('mouseover',function(){ // it is use to show the cursor or mouse on container or div.  
+    console.log("mouse on container")
+    })
+firstcotainer.addEventListener('mouseout',function(){  //it show the mouse or cursor go the out of container
+    console.log("Mouse out of container");
+    })
+firstcotainer.addEventListener('mouseup',function(){ // it show when we release the mouse click.
+console.log("mouse up when clicked on container")
+})    
+firstcotainer.addEventListener('mousedown',function(){  // it show when we click the mouse.
+console.log("Mouse down when clicked on container")
+})
+
+
+console.log("Rajaram");
