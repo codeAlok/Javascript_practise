@@ -97,3 +97,23 @@ console.log(myarr);
 
 const newlen=myarr.unshift("hello")
 console.log(newlen);
+
+// string method in jvascript
+let mylovelystring = "Saurabh is a good good boy";
+console.log(mylovelystring.length);
+console.log(mylovelystring.indexOf("good")); 
+console.log(mylovelystring.lastIndexOf("good")); // it show the index of  last  dublicat  word   
+
+console.log(mylovelystring.slice(1,3)); // for slising the element
+
+d=mylovelystring.replace("Saurabh","Pankaj");
+console.log(d,mylovelystring);
+
+// formation of date
+let mydate= new Date();
+// console.log(mydate.getTime()); // it show in second
+// console.log(mydate.getFullYear()); // it show only year
+// console.log(mydate.getDay()); // it show no of days like sunday is in 0
+// console.log(mydate.getMinutes()); //it show only minutes
+// console.log(mydate.getHours()); // it show only hour
+// console.log(mydate);
