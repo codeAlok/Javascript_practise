@@ -1,4 +1,4 @@
-
+// Q1. find number of leap year between a given range of years
 
 function leap_year_range(start_year, end_year) {
     var year_range = [];
@@ -25,3 +25,20 @@ function test_LeapYear(year) {
 }
 
 console.log(leap_year_range(2000, 2012));
+
+// Q2. Check whether first character of string is uppercase or not
+
+function upper_case(str)
+{
+   regexp = /^[A-Z]/;
+   if (regexp.test(str))
+    {
+      console.log("String's first character is uppercase");
+    } 
+    else
+    {
+      console.log("String's first character is not uppercase");
+    }
+}
+upper_case('Abcd');
+upper_case('abcd');
