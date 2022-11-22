@@ -26,8 +26,8 @@ function test_LeapYear(year) {
 
 console.log(leap_year_range(2000, 2012));
 
-// Q2. Check whether first character of string is uppercase or not
 
+// Q2. Check whether first character of string is uppercase or not
 function upper_case(str)
 {
    regexp = /^[A-Z]/;
@@ -42,3 +42,21 @@ function upper_case(str)
 }
 upper_case('Abcd');
 upper_case('abcd');
+
+// Q3. Print below pattern 
+/*
+*
+* *
+* * *
+*/
+
+var x,y,chr;
+for(x=1; x <=6; x++)
+{
+   for (y=1; y < x; y++)
+     {
+    chr=chr+("*");        
+      }
+ console.log(chr);
+ chr='';    
+}
