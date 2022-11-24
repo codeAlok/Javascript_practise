@@ -25,3 +25,12 @@ const equal = (user1, user2) => {
     console.log(equal({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
     
     console.log (equal({ hair: 'long', beard: true }, { hair: 'long', beard: true, age: 9 })); // false
+
+
+    // type 3
+    let user1 = {nome : "victor", idade: 34};
+    let user2 = {nome : "victor", idade: 34};
+
+    let eq = JSON.stringify(user1)===JSON.stringify(user2);
+    
+    console.log(eq);
