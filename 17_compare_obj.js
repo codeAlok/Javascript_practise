@@ -11,26 +11,17 @@ console.log(matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', bear
 console.log(matches({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
 
 
-// // type 2
-// const eqObj = (obj1, obj2) => {
-//     for (let key in obj1) {
-//         if (obj2.hasOwnProperty(key)) {
-//             continue;
-//         } else { return false }
-//     }
+// type 2
+const equal = (user1, user2) => {
+    return (JSON.stringify(Object.values(user1)) === JSON.stringify(Object.values(user2)))
+    }
     
-//     let o1 = Object.values(obj1);
-//     let o2 = Object.values(obj2);
-//     let i = 0; debugger; let check;
-//     for (let x = 0; x < o1.length; x++) {
-//         check = o1[x] === o2[i];
-//         i++;
-//     }
-//     return check
-// }
-
-// console.log(eqObj({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); // true
-
-// console.log(eqObj({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
-
-// console.log(eqObj({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
+    console.log(equal( {nome:"victor", idade: 36},{nome: "victor", idade: 36})); // true
+    
+    console.log(equal({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); // false
+    
+    console.log(equal({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
+    
+    console.log(equal({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
+    
+    console.log (equal({ hair: 'long', beard: true }, { hair: 'long', beard: true, age: 9 })); // false
