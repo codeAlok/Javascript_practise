@@ -26,3 +26,19 @@ for (var x = 0; x <= 15; x++) {
 // 2 is even
 // 3 is odd  ......
 
+
+// Q3. remove specifed element from left of array
+function removeFromLeft(arr, n = 1) {
+    return arr.slice(n);
+}
+console.log(removeFromLeft([1, 2, 3]));
+console.log(removeFromLeft([1, 2, 3], 1));
+console.log(removeFromLeft([1, 2, 3], 2));
+console.log(removeFromLeft([1, 2, 3], 4));
+
+  // Output
+//  [2,3]
+// [2,3]
+// [3]
+// []
+
